@@ -20,9 +20,6 @@ import Caracteristicas from "./pages/caracteristicas";
 import Contacto from "./pages/contacto";
 import ListaPeliculas from "./components/peliculas";
 
-import Login from "./components/Login";
-import RegistrarUsuario from "./components/RegistrarUsuario";
-
 function App() {
   return (
     <>
@@ -34,15 +31,6 @@ function App() {
           <Route path="/caracteristicas" element={<Caracteristicas />} />
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/peliculas" element={<ListaPeliculas />} />
-          <Route path="/prueba" element={
-            <>
-              <Login />
-              <RegistrarUsuario />
-            </>
-
-            } />
-            <Route path="/login" element={<Login />} />
-            <Route path="/registrar" element={<RegistrarUsuario />} />
 
         </Routes>
 
